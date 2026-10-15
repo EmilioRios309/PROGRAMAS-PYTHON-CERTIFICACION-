@@ -1,0 +1,349 @@
+origen,cadena,esperado,AFD,REGEX,verificador,explicación,discrepancias
+manual,'ana123@gmail.com',True,True,True,True,Combinación autorizada,ninguna
+manual,'juan.perez@outlook.net',True,True,True,True,Punto interior válido,ninguna
+manual,'a_b9@proton.io',True,True,True,True,"Guion bajo interior, termina en dígito",ninguna
+manual,'maria@unam.edu',True,True,True,True,Combinación autorizada,ninguna
+manual,'usuario@empresa.info',True,True,True,True,Extensión de cuatro letras,ninguna
+manual,'abc@ipn.mx',True,True,True,True,Longitud mínima 3,ninguna
+manual,'A1b2C3d4E5f6G7h8I9j0@yahoo.com',True,True,True,True,Usuario alfanumérico de 20,ninguna
+manual,'ana@gmail.edu',False,False,False,False,Combinación no autorizada,ninguna
+manual,'juan@facebook.com',False,False,False,False,Dominio no registrado,ninguna
+manual,'maria@Gmail.com',False,False,False,False,Mayúscula en dominio,ninguna
+manual,'ana@proton.mx',False,False,False,False,Combinación no autorizada,ninguna
+manual,'ab@unam.mx',False,False,False,False,Usuario demasiado corto,ninguna
+manual,'ana..lopez@gmail.com',False,False,False,False,Puntos consecutivos,ninguna
+manual,'ana@empresa.com.mx',False,False,False,False,Extensión compuesta,ninguna
+manual,'ana@icloud.xyz',False,False,False,False,Extensión no registrada,ninguna
+manual,'ana@ipn.EDU',False,False,False,False,Mayúsculas en extensión,ninguna
+manual,'ana__x@gmail.com',False,False,False,False,Guiones bajos consecutivos,ninguna
+manual,'ana._x@gmail.com',False,False,False,False,Secuencia ._,ninguna
+manual,'ana_.x@gmail.com',False,False,False,False,Secuencia _.,ninguna
+manual,'1ana@gmail.com',False,False,False,False,Empieza con dígito,ninguna
+manual,'.ana@gmail.com',False,False,False,False,Empieza con punto,ninguna
+manual,'_ana@gmail.com',False,False,False,False,Empieza con guion bajo,ninguna
+manual,'ana.@gmail.com',False,False,False,False,Termina con punto,ninguna
+manual,'ana_@gmail.com',False,False,False,False,Termina con guion bajo,ninguna
+manual,'ana@@gmail.com',False,False,False,False,Dos arrobas,ninguna
+manual,'anagmail.com',False,False,False,False,Sin arroba,ninguna
+manual,'ana@gmail',False,False,False,False,Sin extensión,ninguna
+manual,'ana@.com',False,False,False,False,Sin dominio,ninguna
+manual,'ana@gmail.',False,False,False,False,Extensión vacía,ninguna
+manual,'ana@gmail..com',False,False,False,False,Dos puntos antes de extensión,ninguna
+manual,' ana@gmail.com',False,False,False,False,Espacio al inicio,ninguna
+manual,'ana@gmail.com ',False,False,False,False,Espacio al final,ninguna
+manual,'an a@gmail.com',False,False,False,False,Espacio en medio,ninguna
+manual,'ana@gmail.com\n',False,False,False,False,Salto de línea final,ninguna
+manual,'añaa@gmail.com',False,False,False,False,Carácter ñ,ninguna
+manual,'ánaa@gmail.com',False,False,False,False,Carácter acentuado,ninguna
+manual,'ana-x@gmail.com',False,False,False,False,Guion medio no autorizado,ninguna
+manual,'ana+x@gmail.com',False,False,False,False,Carácter especial +,ninguna
+manual,'ana@mail.gmail.com',False,False,False,False,Subdominio,ninguna
+manual,'ANA@gmail.com',True,True,True,True,Mayúsculas en usuario válidas,ninguna
+manual,'aaaaaaaaaaaaaaaaaaaa@gmail.com',True,True,True,True,Usuario de exactamente 20,ninguna
+manual,'aaaaaaaaaaaaaaaaaaaaa@gmail.com',False,False,False,False,Usuario de 21,ninguna
+manual,'ab1@hotmail.com',True,True,True,True,Termina en dígito,ninguna
+manual,'ana@hotmail.mx',False,False,False,False,hotmail solo admite com,ninguna
+manual,'',False,False,False,False,Cadena vacía,ninguna
+manual,'@',False,False,False,False,Solo arroba,ninguna
+manual,'ana@educacion.gov',True,True,True,True,educacion con gov,ninguna
+manual,'ana@gmail.com.',False,False,False,False,Punto final extra,ninguna
+generado,'ycgpP@yahoo.com',True,True,True,True,válida generada,ninguna
+generado,'hbI50zOpXR01aRE@yahoo.COM',False,False,False,False,mayúsculas en extensión,ninguna
+generado,'FPoSHxDHJAAnshJog@educacion.net',False,False,False,False,par no autorizado,ninguna
+generado,'tUAJB5v@empresa.com',True,True,True,True,válida generada,ninguna
+generado,'_mbgrWR3xTLDRR92Vg@gmail.mx',False,False,False,False,inicio inválido,ninguna
+generado,'JRbXgwXBTDFoc@outlook.co',False,False,False,False,sin @ / extensión truncada,ninguna
+generado,'CaFo10wtXB@educacion.edu',True,True,True,True,válida generada,ninguna
+generado,'n__uPglSzc@gmail.mx',False,False,False,False,inserta separadores prohibidos,ninguna
+generado,'A89sA@sub.yahoo.com',False,False,False,False,subdominio / doble @,ninguna
+generado,'AILW@outlook.net',True,True,True,True,válida generada,ninguna
+generado,'T@gmail.com',False,False,False,False,usuario demasiado corto,ninguna
+generado,'7oim.uz5Q5eIeaE0nMe@outlook.net',False,False,False,False,inicio inválido,ninguna
+generado,'eI6MhmyYUI@ipn.edu',True,True,True,True,válida generada,ninguna
+generado,'ly@hotmail.com',False,False,False,False,usuario demasiado corto,ninguna
+generado,'Qz2OVvxtGzozI@ipn.mx',True,True,True,True,subdominio / doble @,ninguna
+generado,'NBV0yxJS@outlook.net',True,True,True,True,válida generada,ninguna
+generado,'r9fAOcqI9Hgmail.com',False,False,False,False,sin @ / extensión truncada,ninguna
+generado,'CYT08Y..cOMNLo@educacion.edu',False,False,False,False,inserta ..,ninguna
+generado,'ukcF@ipn.mx',True,True,True,True,válida generada,ninguna
+generado,'vD@yahoo.mx',False,False,False,False,usuario demasiado corto,ninguna
+generado,'xRiMXzeUcjJ@facebook.net',False,False,False,False,dominio no registrado,ninguna
+generado,'YK3gqmTq@empresa.net',True,True,True,True,válida generada,ninguna
+generado,'cBI9vHroeCB4rB1XcBI9vHroeCB4rB1X@gmail.mx',False,False,False,False,usuario demasiado largo,ninguna
+generado,'aÉr5ie@gmail.com',False,False,False,False,carácter ilegal insertado,ninguna
+generado,'o4dcGeLL0JpxVv09@educacion.mx',True,True,True,True,válida generada,ninguna
+generado,'Q1IDfvVR9wQssk@hotmail.info',False,False,False,False,par no autorizado,ninguna
+generado,'Zu3l..riGtqm3pue5M8@proton.com',False,False,False,False,inserta ..,ninguna
+generado,'v8Wnm6Uwm1@empresa.org',True,True,True,True,válida generada,ninguna
+generado,'teukU@Ipn.edu',False,False,False,False,mayúscula en dominio,ninguna
+generado,'JcqBGhusCNXsWw4@e\u200bducacion.mx',False,False,False,False,carácter ilegal insertado,ninguna
+generado,'yLUqgAi@unam.mx',True,True,True,True,válida generada,ninguna
+generado,'zor.uzwy7wsjGGzor.uzwy7wsjGG@outlook.net',False,False,False,False,usuario demasiado largo,ninguna
+generado,'VZWJ_@hotmail.com',False,False,False,False,termina en separador,ninguna
+generado,'Uk1abPtcedGB7Yc@outlook.net',True,True,True,True,válida generada,ninguna
+generado,'T5Y1KGNluuxU4LKW0CIR_@hotmail.com',False,False,False,False,termina en separador,ninguna
+generado,'RSNtPj6GC..gd12xHCrg@icloud.com',False,False,False,False,inserta ..,ninguna
+generado,'s8lyxtvRalN5@unam.mx',True,True,True,True,válida generada,ninguna
+generado,'fbFTQPNZEbry2__Pf@proton.net',False,False,False,False,inserta separadores prohibidos,ninguna
+generado,'7gY020@gmail.com',False,False,False,False,inicio inválido,ninguna
+generado,'zyDuo@empresa.org',True,True,True,True,válida generada,ninguna
+generado,'QpnUBlIzqWlLOS@Yahoo.com',False,False,False,False,mayúscula en dominio,ninguna
+generado,'tP...bwUWBBqhW17v@gmail.mx',False,False,False,False,inserta ..,ninguna
+generado,'GAd4WsPESJNJJ2im@empresa.org',True,True,True,True,válida generada,ninguna
+generado,'ISbT4DnTX9gOeC7Le8aU@Ipn.edu',False,False,False,False,mayúscula en dominio,ninguna
+generado,'CXei6GwERUGIJ@ipn\t.edu',False,False,False,False,carácter ilegal insertado,ninguna
+generado,'iaBq9j0VEtunkX1pSg@yahoo.mx',True,True,True,True,válida generada,ninguna
+generado,'Ni82VeZdZCal5Z@yahoo.COM',False,False,False,False,mayúsculas en extensión,ninguna
+generado,'d9wbauteD6KFOJRIduX@empresa.inf',False,False,False,False,sin @ / extensión truncada,ninguna
+generado,'RGgXsSpYI@icloud.com',True,True,True,True,válida generada,ninguna
+generado,'cTUkauYxxxxxxxxxxxxxxxxxxxxx@unam.edu',False,False,False,False,usuario demasiado largo,ninguna
+generado,'y5x6Xnbfxxxxxxxxxxxxxxxxxxxxx@empresa.org',False,False,False,False,usuario demasiado largo,ninguna
+generado,'HTX0cSH6wq3K@gmail.mx',True,True,True,True,válida generada,ninguna
+generado,'eMudQg0i_Vnh9BMs@hotmail.com.com',False,False,False,False,extensión compuesta,ninguna
+generado,'eJ..K@unam.mx',False,False,False,False,inserta ..,ninguna
+generado,'kwHVTzGvunetbztsGG5@educacion.mx',True,True,True,True,válida generada,ninguna
+generado,'Vyj..vwYv16lj@yahoo.com',False,False,False,False,inserta ..,ninguna
+generado,'aZPKqcppX2DTtI_KJ@mail.org',False,False,False,False,dominio no registrado,ninguna
+generado,'Dj_NistX3BgFdMUgRAZ@yahoo.com',True,True,True,True,válida generada,ninguna
+generado,'c4qLYXUVY0vbQghHdgz@@gmail.mx',False,False,False,False,subdominio / doble @,ninguna
+generado,'tmDJmq.@yahoo.com',False,False,False,False,termina en separador,ninguna
+generado,'D3v@icloud.com',True,True,True,True,válida generada,ninguna
+generado,'fZo0ipn.mx',False,False,False,False,sin @ / extensión truncada,ninguna
+generado,'t..PsZ3@ipn.mx',False,False,False,False,inserta ..,ninguna
+generado,'hdp8Aq0aP0oYvj@icloud.com',True,True,True,True,válida generada,ninguna
+generado,'OwHEZhPYQP1y2L\u200bPum5LS@proton.io',False,False,False,False,carácter ilegal insertado,ninguna
+generado,'YkAxhetyZ@educacion.io',False,False,False,False,par no autorizado,ninguna
+generado,'SdXFyfHFl@educacion.gov',True,True,True,True,válida generada,ninguna
+generado,'_Q7UgznkiEee0eSsAeSxH@outlook.com',False,False,False,False,inicio inválido,ninguna
+generado,'WqL9huRYXDD@hotmail.com.mx',False,False,False,False,extensión compuesta,ninguna
+generado,'OnzUxv4d8btrRQ8d@yahoo.com',True,True,True,True,válida generada,ninguna
+generado,'LhzvXiIIbModd3asfg1x@ipn.MX',False,False,False,False,mayúsculas en extensión,ninguna
+generado,'XA._xtO9TP@unam.mx',False,False,False,False,inserta separadores prohibidos,ninguna
+generado,'QtWshai@hotmail.com',True,True,True,True,válida generada,ninguna
+generado,'HeH7Zz7uFrP1NmNG6@Yahoo.com',False,False,False,False,mayúscula en dominio,ninguna
+generado,'Dze@facebook.com',False,False,False,False,dominio no registrado,ninguna
+generado,'g70xEqp3X42tHsmmE5h3@icloud.com',True,True,True,True,válida generada,ninguna
+generado,'cqmIyDdjZPGCsBT@educacion.EDU',False,False,False,False,mayúsculas en extensión,ninguna
+generado,'dERz2gNIBij9Igpd@ipn.mx.mx',False,False,False,False,extensión compuesta,ninguna
+generado,'wK70rbpyLOqR0maf3zSL@icloud.com',True,True,True,True,válida generada,ninguna
+generado,'QCysK@outlook.mx',False,False,False,False,par no autorizado,ninguna
+generado,'PHK8uQonDIe2iiZ8E0@outlook.net.com',False,False,False,False,extensión compuesta,ninguna
+generado,'fItWtV5@educacion.edu',True,True,True,True,válida generada,ninguna
+generado,'lRu_@outlook.net',False,False,False,False,termina en separador,ninguna
+generado,'W6bnZc.DM@mail.com',False,False,False,False,dominio no registrado,ninguna
+generado,'YL6GmVNCDXR5BDY@ipn.mx',True,True,True,True,válida generada,ninguna
+generado,'KjKVhBmn6@sub.hotmail.com',False,False,False,False,subdominio / doble @,ninguna
+generado,'MBud1XeCsahLLot4_.uC@gmail.com',False,False,False,False,inserta separadores prohibidos,ninguna
+generado,'bd4GzUv5gYoah55@ipn.mx',True,True,True,True,válida generada,ninguna
+generado,'rSjY..C@icloud.com',False,False,False,False,inserta ..,ninguna
+generado,'fTEZstNyIHZ@Ipn.edu',False,False,False,False,mayúscula en dominio,ninguna
+generado,'NLTU0a2JKZvR3j@gmail.mx',True,True,True,True,válida generada,ninguna
+generado,'Nf30jXFBRGc@gmai.mx',False,False,False,False,dominio no registrado,ninguna
+generado,'T1@yahoo.mx',False,False,False,False,usuario demasiado corto,ninguna
+generado,'u5XLCRfa@yahoo.com',True,True,True,True,válida generada,ninguna
+generado,'dYH9W@facebook.edu',False,False,False,False,dominio no registrado,ninguna
+generado,'cel5sPWqLqO6GPM@gmail.co',False,False,False,False,sin @ / extensión truncada,ninguna
+generado,'p1bfz8toZiNY4t8@empresa.info',True,True,True,True,válida generada,ninguna
+generado,'cSWIxR@h\u200botmail.com',False,False,False,False,carácter ilegal insertado,ninguna
+generado,'mewdMGYmHbJ@hotmail.co',False,False,False,False,sin @ / extensión truncada,ninguna
+generado,'TQTDQ9IPBaRb@icloud.com',True,True,True,True,válida generada,ninguna
+generado,'QXjWS5exei3c@empresa.COM',False,False,False,False,mayúsculas en extensión,ninguna
+generado,'kJD2BerAUUykm0xj_@educacion.gov',False,False,False,False,termina en separador,ninguna
+generado,'RQpF@ipn.edu',True,True,True,True,válida generada,ninguna
+generado,'MnQ3mq2F8JR3QtQCZ7H@unam.MX',False,False,False,False,mayúsculas en extensión,ninguna
+generado,'Fk10YMxfOC2w3VeR@proton.io',True,True,True,True,subdominio / doble @,ninguna
+generado,'c2TmVW6XaSsCXmVEx9@educacion.mx',True,True,True,True,válida generada,ninguna
+generado,'YJ27NTXsx@ipn.EDU',False,False,False,False,mayúsculas en extensión,ninguna
+generado,'r_GMjR5Us5OZ6WmN@Hotmail.com',False,False,False,False,mayúscula en dominio,ninguna
+generado,'EjCx@gmail.mx',True,True,True,True,válida generada,ninguna
+generado,'e7eNfDb4sH@icloud.com',True,True,True,True,subdominio / doble @,ninguna
+generado,'qXpccz@Empresa.net',False,False,False,False,mayúscula en dominio,ninguna
+generado,'klB3dJC1Ua4O9xTL@outlook.com',True,True,True,True,válida generada,ninguna
+generado,'AHjJyU43oYtBJHy9@gm-ail.com',False,False,False,False,carácter ilegal insertado,ninguna
+generado,'yuvc_KKH3gWs0D7@facebook.mx',False,False,False,False,dominio no registrado,ninguna
+generado,'LvZ5T@unam.mx',True,True,True,True,válida generada,ninguna
+generado,'hB@empresa.com',False,False,False,False,usuario demasiado corto,ninguna
+generado,'Hidey6ELl5eyb9kOA0@empresa.INFO',False,False,False,False,mayúsculas en extensión,ninguna
+generado,'srqhBpFdjr68Nlp@outlook.net',True,True,True,True,válida generada,ninguna
+generado,'p7UQVis4@@proton.com',False,False,False,False,subdominio / doble @,ninguna
+generado,'v@gmail.mx',False,False,False,False,usuario demasiado corto,ninguna
+generado,'lG0zgKDgMUl6QcC@empresa.com',True,True,True,True,válida generada,ninguna
+generado,'dP9uGUOUr0bnuVK@proton.COM',False,False,False,False,mayúsculas en extensión,ninguna
+generado,'tD@outlook.com',False,False,False,False,usuario demasiado corto,ninguna
+generado,'grvjsO@outlook.net',True,True,True,True,válida generada,ninguna
+generado,'OXw135hLs@x.org',False,False,False,False,dominio no registrado,ninguna
+generado,'qwoYFiXFasCsFCQL@@hotmail.com',False,False,False,False,subdominio / doble @,ninguna
+generado,'uaPTTZa@gmail.com',True,True,True,True,válida generada,ninguna
+generado,'vCVa._xj9z2foW@educacion.gov',False,False,False,False,inserta separadores prohibidos,ninguna
+generado,'ezF6TtrcFxKsezF6TtrcFxKs@empresa.org',False,False,False,False,usuario demasiado largo,ninguna
+generado,'FjcIOBUZlahedYPCR@empresa.info',True,True,True,True,válida generada,ninguna
+generado,'ZiwEZff6tHuyFOX@@hotmail.com',False,False,False,False,subdominio / doble @,ninguna
+generado,'yfG6grNtqh@mail.com',False,False,False,False,dominio no registrado,ninguna
+generado,'UdCqNKVtx3kkSsRVo@empresa.info',True,True,True,True,válida generada,ninguna
+generado,'R5M4hWxztwQA2s3vZ@ñyahoo.com',False,False,False,False,carácter ilegal insertado,ninguna
+generado,'H8kEHYIOv..G7@unam.mx',False,False,False,False,inserta ..,ninguna
+generado,'EsiFI1bPbWYxeyQKu@proton.io',True,True,True,True,válida generada,ninguna
+generado,'uz3DdEtKUxxxxxxxxxxxxxxxxxxxxx@icloud.com',False,False,False,False,usuario demasiado largo,ninguna
+generado,'G8AjHQ2Te@yahoo.info',False,False,False,False,par no autorizado,ninguna
+generado,'b0t4mgwqqSYUI8QRXa@ipn.edu',True,True,True,True,válida generada,ninguna
+generado,'qOv@facebook.mx',False,False,False,False,dominio no registrado,ninguna
+generado,'zNJV..8zII5@gmail.mx',False,False,False,False,inserta ..,ninguna
+generado,'j5DQqMVrt0DLyU0dpPJ3@proton.io',True,True,True,True,válida generada,ninguna
+generado,'QfaHrmH@x.org',False,False,False,False,dominio no registrado,ninguna
+generado,'JY7LZd@facebook.mx',False,False,False,False,dominio no registrado,ninguna
+generado,'nrTVvHQv_Dr@outlook.net',True,True,True,True,válida generada,ninguna
+generado,'Y2BmU@x.com',False,False,False,False,dominio no registrado,ninguna
+generado,'_X8lNl03v@unam.mx',False,False,False,False,inicio inválido,ninguna
+generado,'tPvO5e@yahoo.mx',True,True,True,True,válida generada,ninguna
+generado,'qrZqFwyfYSgmail.com',False,False,False,False,sin @ / extensión truncada,ninguna
+generado,'DjfLJV6kqVrj@Hotmail.com',False,False,False,False,mayúscula en dominio,ninguna
+generado,'QdiajY@proton.com',True,True,True,True,válida generada,ninguna
+generado,'USMgJ7R76GxPCVje8N@gmail.mx',True,True,True,True,subdominio / doble @,ninguna
+generado,'SJ4XP8@x.io',False,False,False,False,dominio no registrado,ninguna
+generado,'ZgELHFY7y@ipn.edu',True,True,True,True,válida generada,ninguna
+generado,'EG@outlook.com',False,False,False,False,usuario demasiado corto,ninguna
+generado,'yFx9Lrq59N040aKkbDkVunam.edu',False,False,False,False,sin @ / extensión truncada,ninguna
+generado,'uGg0DBB7H@hotmail.com',True,True,True,True,válida generada,ninguna
+generado,'pweDxLbn1snUempresa.net',False,False,False,False,sin @ / extensión truncada,ninguna
+generado,'aT1fL@facebook.gov',False,False,False,False,dominio no registrado,ninguna
+generado,'CSYj5w0g@educacion.gov',True,True,True,True,válida generada,ninguna
+generado,'fkL._a1kn@hotmail.com',False,False,False,False,inserta separadores prohibidos,ninguna
+generado,'EAoZkc4GlrSxZQgzc8@unam.MX',False,False,False,False,mayúsculas en extensión,ninguna
+generado,'wHqJGF@empresa.com',True,True,True,True,válida generada,ninguna
+generado,'ASWA_.rP52JXpH@empresa.org',False,False,False,False,inserta separadores prohibidos,ninguna
+generado,'Gwn3@yahoo.co',False,False,False,False,sin @ / extensión truncada,ninguna
+generado,'iEyorLqUqqm@empresa.org',True,True,True,True,válida generada,ninguna
+generado,'vhKPzi@empresa.info.mx',False,False,False,False,extensión compuesta,ninguna
+generado,'.EAzaY7oWyJC@icloud.com',False,False,False,False,inicio inválido,ninguna
+generado,'ZtQrOhDbXgk5uH5f@yahoo.com',True,True,True,True,válida generada,ninguna
+generado,'L-l8AqdWLVC3D@unam.edu',False,False,False,False,carácter ilegal insertado,ninguna
+generado,'O@icloud.com',False,False,False,False,usuario demasiado corto,ninguna
+generado,'fjpntIl2mlP5jN@hotmail.com',True,True,True,True,válida generada,ninguna
+generado,'Uv5V.@educacion.edu',False,False,False,False,termina en separador,ninguna
+generado,'wkC@educacion.gov\u200b',False,False,False,False,carácter ilegal insertado,ninguna
+generado,'QBDtnq5b@ipn.edu',True,True,True,True,válida generada,ninguna
+generado,'7JO3cLCPIjO6jnPGh@hotmail.com',False,False,False,False,inicio inválido,ninguna
+generado,'JW@proton.io',False,False,False,False,usuario demasiado corto,ninguna
+generado,'rC6sclOpv3@educacion.mx',True,True,True,True,válida generada,ninguna
+generado,'wycRfF_@empresa.net',False,False,False,False,termina en separador,ninguna
+generado,'_Fzvz_cNTu@ipn.edu',False,False,False,False,inicio inválido,ninguna
+generado,'o45GcHxwr@icloud.com',True,True,True,True,válida generada,ninguna
+generado,'iAzBXpCEUymbCNH#A@empresa.com',False,False,False,False,carácter ilegal insertado,ninguna
+generado,'CuxdHB@proton.com.mx',False,False,False,False,extensión compuesta,ninguna
+generado,'ZE9mXbH9rsD4SSqONXgH@icloud.com',True,True,True,True,válida generada,ninguna
+generado,'_BmwSCSypYQw8tUtTSM@educacion.mx',False,False,False,False,inicio inválido,ninguna
+generado,'lhm2wpmNVyvUIBJ3_bi@outlook.net.mx',False,False,False,False,extensión compuesta,ninguna
+generado,'KwrSZszC8hbI@proton.com',True,True,True,True,válida generada,ninguna
+generado,'a0SebpNfI..A2AQC@hotmail.com',False,False,False,False,inserta ..,ninguna
+generado,'Mdr9rnd113yiFD@Gmail.mx',False,False,False,False,mayúscula en dominio,ninguna
+generado,'wtagpuUiFJum@educacion.org',True,True,True,True,válida generada,ninguna
+generado,'ACpB3U7pA2yxk@sub.yahoo.com',False,False,False,False,subdominio / doble @,ninguna
+generado,'XG80X\tsLKBT@yahoo.mx',False,False,False,False,carácter ilegal insertado,ninguna
+generado,'EYlVGzfa@outlook.net',True,True,True,True,válida generada,ninguna
+generado,'DU@icloud.com',False,False,False,False,usuario demasiado corto,ninguna
+generado,'EWXbAwTQUXlVqTLME@yahoo.com',True,True,True,True,subdominio / doble @,ninguna
+generado,'pc09GU4R2D22F064fhC@hotmail.com',True,True,True,True,válida generada,ninguna
+generado,'z._XGbAE88213eQiDf@icloud.com',False,False,False,False,inserta separadores prohibidos,ninguna
+generado,'A@empresa.net',False,False,False,False,usuario demasiado corto,ninguna
+generado,'psDQQsJmAuC6F1f0Nv9@hotmail.com',True,True,True,True,válida generada,ninguna
+generado,'VJwIDkEt@gmail1.edu',False,False,False,False,dominio no registrado,ninguna
+generado,'xsCi@hotmail.net',False,False,False,False,par no autorizado,ninguna
+generado,'Q41uBMGbx@yahoo.com',True,True,True,True,válida generada,ninguna
+generado,'oTZLdempresa.org',False,False,False,False,sin @ / extensión truncada,ninguna
+generado,'XKw0DSñU@educacion.mx',False,False,False,False,carácter ilegal insertado,ninguna
+generado,'gBQeo1Uz9SJVbLtyfh3@proton.io',True,True,True,True,válida generada,ninguna
+generado,'rjpDvc7V3Z54U1Ch.@hotmail.com',False,False,False,False,termina en separador,ninguna
+generado,'uQ9TyrLfgxt@Unam.edu',False,False,False,False,mayúscula en dominio,ninguna
+generado,'x1fmEyWRU7UAIL@proton.io',True,True,True,True,válida generada,ninguna
+generado,'c6uxhz97ltznUPbp4mX3@proton.edu',False,False,False,False,par no autorizado,ninguna
+generado,'cETrjr3o0U@Educacion.edu',False,False,False,False,mayúscula en dominio,ninguna
+generado,'JKq9h@empresa.com',True,True,True,True,válida generada,ninguna
+generado,'ok9srgRLLt6us8t0@yahoo.MX',False,False,False,False,mayúsculas en extensión,ninguna
+generado,'BOWWnNGWyTo@Proton.net',False,False,False,False,mayúscula en dominio,ninguna
+generado,'RXK1CjdlrK@icloud.com',True,True,True,True,válida generada,ninguna
+generado,'lGcu9YyGUMLS@@hotmail.com',False,False,False,False,subdominio / doble @,ninguna
+generado,'L3@outlook.com',False,False,False,False,usuario demasiado corto,ninguna
+generado,'dv89PjMc@empresa.org',True,True,True,True,válida generada,ninguna
+generado,'rv8Wcb9jeas0rv8Wcb9jeas0@ipn.mx',False,False,False,False,usuario demasiado largo,ninguna
+generado,'mGh1u\u200bRA@icloud.com',False,False,False,False,carácter ilegal insertado,ninguna
+generado,'jK4AYirIXEDlWvAvMo@gmail.com',True,True,True,True,válida generada,ninguna
+generado,'ZAbu@hotmail.info',False,False,False,False,par no autorizado,ninguna
+generado,'q._tBGnPw@gmail.com',False,False,False,False,inserta separadores prohibidos,ninguna
+generado,'b6O0kD2M@gmail.com',True,True,True,True,válida generada,ninguna
+generado,'df2xxxxxxxxxxxxxxxxxxxxx@empresa.net',False,False,False,False,usuario demasiado largo,ninguna
+generado,'.B81jXVvcBCPb@icloud.com',False,False,False,False,inicio inválido,ninguna
+generado,'laZgQv6SwX@outlook.com',True,True,True,True,válida generada,ninguna
+generado,'XKbcCKI8ufOWZHuW.@hotmail.com',False,False,False,False,termina en separador,ninguna
+generado,'GMR4gfeducacion.edu',False,False,False,False,sin @ / extensión truncada,ninguna
+generado,'B36LIcqwWbAgqoG@yahoo.com',True,True,True,True,válida generada,ninguna
+generado,'LJ6aLVlkh2wYF5Sp\u200b@educacion.gov',False,False,False,False,carácter ilegal insertado,ninguna
+generado,'qtXHKu0zBYqIlU@hotmail.co',False,False,False,False,sin @ / extensión truncada,ninguna
+generado,'VtUKbPynVUoPMWzbmU@proton.net',True,True,True,True,válida generada,ninguna
+generado,'FqUqARKZZ.@outlook.net',False,False,False,False,termina en separador,ninguna
+generado,'G1f9D4Su2O0zwXG1f9D4Su2O0zwX@empresa.org',False,False,False,False,usuario demasiado largo,ninguna
+generado,'YGILGoqsYhImLzZ8QuA@yahoo.com',True,True,True,True,válida generada,ninguna
+generado,'AM2M62GA8dF_.b@unam.edu',False,False,False,False,inserta separadores prohibidos,ninguna
+generado,'nUKdcSfeIxxxxxxxxxxxxxxxxxxxxx@gmail.mx',False,False,False,False,usuario demasiado largo,ninguna
+generado,'QZLzZ3SKlqwHpWljn1@empresa.info',True,True,True,True,válida generada,ninguna
+generado,'OHJcoW18uwQUx4EOlcpgmail.mx',False,False,False,False,sin @ / extensión truncada,ninguna
+generado,'k@educacion.edu',False,False,False,False,usuario demasiado corto,ninguna
+generado,'pNE@icloud.com',True,True,True,True,válida generada,ninguna
+generado,'hepqHMOZccW7KLE_@outlook.com',False,False,False,False,termina en separador,ninguna
+generado,'M8..v61cdP@outlook.com',False,False,False,False,inserta ..,ninguna
+generado,'D2L6Av@outlook.com',True,True,True,True,válida generada,ninguna
+generado,'7AVUypYh@educacion.edu',False,False,False,False,inicio inválido,ninguna
+generado,'DT6wZOeKf@ipn.MX',False,False,False,False,mayúsculas en extensión,ninguna
+generado,'umvF@unam.mx',True,True,True,True,válida generada,ninguna
+generado,'Is8gE49kwjDM73lcwjS0@gmail.org',False,False,False,False,par no autorizado,ninguna
+generado,'R4LBiaR8xW1xwdFq3Feducacion.gov',False,False,False,False,sin @ / extensión truncada,ninguna
+generado,'qMm2HB5ZcJLMAXEQCPo@yahoo.mx',True,True,True,True,válida generada,ninguna
+generado,'OKC4WrcfFV9ttS@icloud.com.mx',False,False,False,False,extensión compuesta,ninguna
+generado,'keNqUL9gnmir7keNqUL9gnmir7@proton.io',False,False,False,False,usuario demasiado largo,ninguna
+generado,'yXvvbgCia_UCL@hotmail.com',True,True,True,True,válida generada,ninguna
+generado,'f@gmail.mx',False,False,False,False,usuario demasiado corto,ninguna
+generado,'dZ9ayOJbWJbw@Empresa.info',False,False,False,False,mayúscula en dominio,ninguna
+generado,'GSpVHdVm9Co@yahoo.mx',True,True,True,True,válida generada,ninguna
+generado,'naOcthQ1RRvmcfBnaOcthQ1RRvmcfB@empresa.com',False,False,False,False,usuario demasiado largo,ninguna
+generado,'wB_.3Z5@yahoo.com',False,False,False,False,inserta separadores prohibidos,ninguna
+generado,'y8azqbGoxi0@empresa.info',True,True,True,True,válida generada,ninguna
+generado,'xthzWQuSB8O@ipn.m',False,False,False,False,sin @ / extensión truncada,ninguna
+generado,'ByRlqxHgc4sqtXGáXmm4m@yahoo.com',False,False,False,False,carácter ilegal insertado,ninguna
+generado,'WdSNH1Yo24tAQXOe@outlook.net',True,True,True,True,válida generada,ninguna
+generado,'DoM4lJ762jKw5skjl6p@Educacion.edu',False,False,False,False,mayúscula en dominio,ninguna
+generado,'R..xf@hotmail.com',False,False,False,False,inserta ..,ninguna
+generado,'ogzwnA11MCpFiMQD@ipn.mx',True,True,True,True,válida generada,ninguna
+generado,'XWY MAvjeDN9odWVUkCW@proton.io',False,False,False,False,carácter ilegal insertado,ninguna
+generado,'GE85PkIOI4AIqoU5du@Icloud.com',False,False,False,False,mayúscula en dominio,ninguna
+generado,'p5qlasDW6Z@ipn.edu',True,True,True,True,válida generada,ninguna
+generado,'KKyeFhouEJs@unam.gov',False,False,False,False,par no autorizado,ninguna
+generado,'BGV@yahoo.mx',True,True,True,True,subdominio / doble @,ninguna
+generado,'OmxROo5p.Z@empresa.org',True,True,True,True,válida generada,ninguna
+generado,'gRD0l6MlYyNC@proton.IO',False,False,False,False,mayúsculas en extensión,ninguna
+generado,'U@outlook.com',False,False,False,False,usuario demasiado corto,ninguna
+generado,'s8pk7bCH@empresa.com',True,True,True,True,válida generada,ninguna
+generado,'k7@yahoo.com',False,False,False,False,usuario demasiado corto,ninguna
+generado,'bx38Pssl__puGdxOPVXjj@empresa.org',False,False,False,False,inserta separadores prohibidos,ninguna
+generado,'eHOOz@educacion.mx',True,True,True,True,válida generada,ninguna
+generado,'XhPImyVLIKfv24@icloud.COM',False,False,False,False,mayúsculas en extensión,ninguna
+generado,'giQ5lG@Hotmail.com',False,False,False,False,mayúscula en dominio,ninguna
+generado,'K6hPZOa@icloud.com',True,True,True,True,válida generada,ninguna
+generado,'FHNQM@hotmail.co',False,False,False,False,sin @ / extensión truncada,ninguna
+generado,'Y@educacion.org',False,False,False,False,usuario demasiado corto,ninguna
+generado,'tSWev6G.bK@ipn.edu',True,True,True,True,válida generada,ninguna
+generado,'_N3MLJpvGzlf@yahoo.mx',False,False,False,False,inicio inválido,ninguna
+generado,'ZApiLsgOSSw0sÉIKFkTQ@icloud.com',False,False,False,False,carácter ilegal insertado,ninguna
+generado,'wXlmuwaCeZikGmldKexF@gmail.mx',True,True,True,True,válida generada,ninguna
+generado,'AGajYvznLm..ezcGIQmA@empresa.net',False,False,False,False,inserta ..,ninguna
+generado,'s0-XHIulHe@empresa.org',False,False,False,False,carácter ilegal insertado,ninguna
+generado,'fBMCau0@ipn.edu',True,True,True,True,válida generada,ninguna
+generado,'Q9h._c@hotmail.com',False,False,False,False,inserta separadores prohibidos,ninguna
+generado,'v9byfg@Proton.net',False,False,False,False,mayúscula en dominio,ninguna
+generado,'JNWfJkQ135Uy@hotmail.com',True,True,True,True,válida generada,ninguna
+generado,'ebi__MRy@proton.com',False,False,False,False,inserta separadores prohibidos,ninguna
+generado,'V23tEqw7E@icloud.net',False,False,False,False,par no autorizado,ninguna
+generado,'QdYZIvbbRsKeA@yahoo.com',True,True,True,True,válida generada,ninguna
+generado,'ZoSkkfzX1x0Cl9CS0@yahoo.gov',False,False,False,False,par no autorizado,ninguna
+generado,'NOuzqPRSky@facebook.net',False,False,False,False,dominio no registrado,ninguna
+generado,'Bldg_RT9Rwv_Jq@hotmail.com',True,True,True,True,válida generada,ninguna
+generado,'lJyKJ_@proton.io',False,False,False,False,termina en separador,ninguna
+generado,'Q2bDgqLJVEspsxbunam.edu',False,False,False,False,sin @ / extensión truncada,ninguna
