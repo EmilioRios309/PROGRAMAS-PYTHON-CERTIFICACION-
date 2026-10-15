@@ -46,3 +46,4 @@ def view_settings(settings):
 
 test_settings = {'theme': 'light', 'language': 'English'}
 print(add_setting(test_settings, ('THEME', 'dark')))
+add_setting
